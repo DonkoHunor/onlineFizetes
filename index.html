@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" data-bs-theme = "dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online fizetés</title>
+  </head>
+  <body>
+    <div id="container" class="container pr-25">
+      <form class="form">
+        <!--Név-->
+        <div class="row mb-3">
+          <label class="col-form-label" for="nev">Teljes Név: </label>
+          <div class="col"><input class="form-control" id="nev" type="text"></div>
+          <div class="col-8"></div>    
+        </div>
+        <!--Ország-->
+        <div class="row mb-3">
+          <label class="col-form-label" for="orszag">Ország: </label>
+          <div class="col"><input class="form-control" id="orszag" type="text"></div>
+          <div class="col-8"></div>            
+        </div>
+        <!--Város-->
+        <div class="row mb-3">
+          <label class="col-form-label" for="varos">Város: </label>
+          <div class="col"><input class="form-control" id="varos" type="text"></div>
+          <div class="col-8"></div>            
+        </div>
+        <!--Utca, házszám-->
+        <div class="row g-3 mb-3">
+          <label class="col-form-label" for="utcaHazsz">Utca, házszám: </label>
+          <div class="col"><input class="form-control" id="utcaHazsz" type="text"></div>
+          <div class="col-8"></div>  
+        </div>
+        <!--Irányítoszám-->
+        <div class="row mb-3">
+          <label class="col-form-label" for="iranyitoszam">Irányítószám: </label>
+          <div class="col"><input class="form-control" id="iranyitoszam" type="text"></div>
+          <div class="col-8"></div>            
+        </div>
+        <!--Bankkértya szám-->
+        <div class="row mb-3">
+          <label class="col-form-label" for="kartyaSzam">Bankártya szám: </label>
+          <div class="col"><input class="form-control" id="kartyaSzam" type="text"></div>
+          <div class="col-8"></div>            
+        </div>
+        <!--Ellenörző kód-->
+        <div class="row mb-3">
+          <label class="col-form-label" for="kartyaKod">Ellenörző kód: </label>
+          <div class="col"><input class="form-control" id="kartyaKod" type="text"></div>
+          <div class="col-8"></div>            
+        </div>
+        <!--Bakartyara írt név-->
+        <div class="row mb-3">
+          <label class="col-form-label" for="kartyaNev">Bakartyara írt név: </label>
+          <div class="col"><input class="form-control" id="kartyaNev" type="text"></div>
+          <div class="col-8"></div>            
+        </div>
+      </form>
+      <div class="row">
+        <button id="btn" class="col-2 btn bg-primary">Fizetés</button>
+        <p class="col-auto" id="error"></p>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
